@@ -14,12 +14,16 @@
         return serialNumber;
     }
 
-    void Machine::add_Slot(LotokSnacks* in_Slot)
+   /* void Machine::addSlot(LotokSnacks* in_Slot)
     {
         freeSlot = in_Slot;
-    }
+    }*/
 
-    void Machine::get_EmplySlotsCount()
+    void Machine::getEmplySlotsCount()
     {
         std::cout<<"Пустых слотов в машине = " << slotCount << std::endl;
+    }
+    void Machine::setEmplySlotsCount(short newCount)
+    {
+        slotCount = newCount;
     }

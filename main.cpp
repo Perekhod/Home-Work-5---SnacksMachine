@@ -13,9 +13,12 @@ int main()
 	slot->add_snack(bounty);
 	slot->add_snack(snikers);
 	Machine* oneMachine	= new Machine(0001, 50);
-	oneMachine->add_Slot(slot);
+	/*oneMachine->addSlot(slot);*/
 
-	oneMachine->get_EmplySlotsCount();
+	oneMachine->getEmplySlotsCount();
+	oneMachine->setEmplySlotsCount(100);
+	oneMachine->getEmplySlotsCount();
+
 	delete bounty;
 	delete snikers;
 	delete slot;
